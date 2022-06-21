@@ -1,3 +1,4 @@
+/* eslint-disable operator-linebreak */
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-return-assign */
 import { createSlice, current } from '@reduxjs/toolkit';
@@ -94,12 +95,11 @@ const cartSlice = createSlice({
 
       state.totalItems = totalItems;
       state.totalAmount = totalAmount;
-
-      console.log(totalItems, totalAmount)
     },
   },
 });
 
-export const { addToCart, removeItem, toggleAmount, clearCart, countCartTotals } = cartSlice.actions;
+export const { addToCart, removeItem, toggleAmount, clearCart, countCartTotals } =
+  cartSlice.actions;
 export const selectAllCartProductsState = (state) => state.cart;
 export default cartSlice.reducer;
